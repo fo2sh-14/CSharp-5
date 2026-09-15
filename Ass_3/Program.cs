@@ -28,10 +28,18 @@
             #region 3st answer
             PrintWelcomeMessage();
             #endregion
+
+            #region 4st answer
+            PrintBookTitle("Clean Code");
+            #endregion
         }
         public static void PrintWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Library!");
+        }
+        public static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
         }
 
     }

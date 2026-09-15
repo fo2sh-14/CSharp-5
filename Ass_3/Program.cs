@@ -73,6 +73,10 @@
             }
 
             #endregion
+            #region 10st answer
+            PrintBookInfo("C#");
+            PrintBookInfo("C#" , 555);
+            #endregion
         }
         public static void PrintWelcomeMessage()
         {
@@ -121,6 +125,11 @@
                 return false;
             }
                 
+        }
+
+        public static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"title: {title} - pages = {pages}");
         }
     }
 }

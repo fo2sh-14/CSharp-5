@@ -50,9 +50,9 @@
             Console.WriteLine("Book title: " + title);
         }
 
-        public static int AddBonusPages(int pages)
+        public static void AddBonusPages(int pages)
         {
-            return pages + 50;
+            pages += 50;
         }
     }
 }

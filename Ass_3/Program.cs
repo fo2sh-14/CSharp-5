@@ -64,10 +64,13 @@
             #endregion
 
             #region 9st answer
-            string title = Console.ReadLine();
+            string? title = Console.ReadLine();
             double price;
-            TryGetPrice(title , out price);
-            Console.WriteLine(price);
+            if (title != null)
+            {
+                TryGetPrice(title, out price);
+                Console.WriteLine(price);
+            }
 
             #endregion
         }

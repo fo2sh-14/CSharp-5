@@ -32,15 +32,27 @@
             #region 4st answer
             PrintBookTitle("Clean Code");
             #endregion
+
+            #region 5st answer
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages); // 400
+            // print 400 ==> because passing by value type
+            #endregion
         }
         public static void PrintWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Library!");
         }
+
         public static void PrintBookTitle(string title)
         {
             Console.WriteLine("Book title: " + title);
         }
 
+        public static int AddBonusPages(int pages)
+        {
+            return pages + 50;
+        }
     }
 }

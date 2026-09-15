@@ -44,7 +44,14 @@
             double[] prices_2 = { 25.5, 40.0 };
             ApplyDiscount(prices_2);
             Console.WriteLine(prices_2[0]); // 20.5
-            // print 20.5 ==> passing by Ref type 
+                                            // print 20.5 ==> passing by Ref type 
+            #endregion
+
+            #region 7st answer
+            int pages_1 = 400;
+            AddBonusPagesByRef(ref pages_1);
+            Console.WriteLine(pages_1); // 450
+            // passing by ref - value type 
             #endregion
         }
         public static void PrintWelcomeMessage()
@@ -61,9 +68,15 @@
         {
             pages += 50;
         }
+
         public static void ApplyDiscount(double[] prices)
         {
             prices[0] -= 5;
+        }
+
+        public static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
         }
     }
 }

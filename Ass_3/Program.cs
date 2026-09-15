@@ -53,6 +53,16 @@
             Console.WriteLine(pages_1); // 450
             // passing by ref - value type 
             #endregion
+
+            #region 8st answer
+            double[] prices_3 = { 25.5, 40.0 ,19};
+            ReplaceArray(ref prices_3);
+            for (int i = 0; i < prices_3.Length; i++)
+            {
+                Console.WriteLine(prices_3[i]);
+            }
+
+            #endregion
         }
         public static void PrintWelcomeMessage()
         {
@@ -77,6 +87,15 @@
         public static void AddBonusPagesByRef(ref int pages)
         {
             pages += 50;
+        }
+
+        public static void ReplaceArray(ref double[] prices)
+        {
+            double[] array = { 10.0, 12.5, 15.0 };
+            for (int i = 0; i < prices.Length; i++)
+            {
+                prices[i] = array[i];
+            }
         }
     }
 }

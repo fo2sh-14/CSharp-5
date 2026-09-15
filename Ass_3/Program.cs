@@ -24,6 +24,15 @@
                 Console.WriteLine();
             }
             #endregion
+
+            #region 3st answer
+            PrintWelcomeMessage();
+            #endregion
         }
+        public static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
+        }
+
     }
 }

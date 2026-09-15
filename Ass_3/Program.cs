@@ -81,6 +81,10 @@
             #region 11st answer
             PrintBookInfo(pages: 550,title:"C#");
             #endregion
+
+            #region 12st answer
+            PrintAllTitles("C#", "C++", "PHP");
+            #endregion
         }
         public static void PrintWelcomeMessage()
         {
@@ -134,6 +138,12 @@
         public static void PrintBookInfo(string title, int pages = 300)
         {
             Console.WriteLine($"title: {title} - pages = {pages}");
+        }
+
+        public static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles)
+                Console.WriteLine(title);
         }
     }
 }

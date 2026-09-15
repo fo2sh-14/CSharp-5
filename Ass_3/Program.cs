@@ -37,7 +37,14 @@
             int pages = 400;
             AddBonusPages(pages);
             Console.WriteLine(pages); // 400
-            // print 400 ==> because passing by value type
+                                      // print 400 ==> because passing by value type
+            #endregion
+
+            #region 6st answer
+            double[] prices_2 = { 25.5, 40.0 };
+            ApplyDiscount(prices_2);
+            Console.WriteLine(prices_2[0]); // 20.5
+            // print 20.5 ==> passing by Ref type 
             #endregion
         }
         public static void PrintWelcomeMessage()
@@ -53,6 +60,10 @@
         public static void AddBonusPages(int pages)
         {
             pages += 50;
+        }
+        public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
         }
     }
 }
